@@ -1,0 +1,163 @@
+1.create your own resume data in JSON formate 
+
+{
+  "personal_information": {
+    "name": "Jayaprakash",
+    "email": "jayaprakashkaruna2003@gmail.com.com",
+    "phone": "+91 6381054814",
+    "address": {
+      "street": "north Street",
+      "city": "kalathur",
+      "state": "Tamil Nadu",
+      "country": "India"
+    },
+    "linkedin": "https://www.linkedin.com/in/jayaprakashkaruna2003",
+    "website": "https://www.jayaprakashkaruna2003.com"
+  },
+  "summary": "I am Jayaprakash, a dedicated and enthusiastic B.Tech graduate in Automobile Engineering with foundational experience gained through a 30-day internship at Rasi Agriculture and Constructional Equipments. During my internship, I worked as a mechanic, honing practical skills and gaining hands-on experience with various agricultural and construction machinery. Proficient in AutoCAD, I have a solid understanding of vehicle dynamics and mechanical design. Passionate about advancing my career in the automotive industry, I am eager to apply my academic knowledge and technical skills to contribute to innovative and sustainable engineering solutions..",
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "institution": "SRM institution of Technology",
+      "location": "Kattankalathur,Chennai",
+      "graduation_year": 2024,
+      "GPA": 7.1
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "senior mechanic",
+      "company": "Rasi Agriculture and Constructional Equipments.",
+      "location": "kalakurichi",
+      "start_date": "2023-06-01",
+      "end_date": "2023-07-01",
+    },
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    },
+    {
+      "language": "Tamil",
+      "proficiency": "Professional Working Proficiency"
+    }
+  ],
+  "interests": [
+    "Open source contribution",
+    "Machine learning",
+    "Traveling",
+    "Photography"
+  ]
+}
+
+
+2.for the given JSON iterate over all for loops (for, for in, for off, for each)
+ 
+
+For...in loop:
+
+let myObject = {
+  "name": "Jayaprakash",
+  "age": 20,
+  "city": "kalathur"
+};
+
+for (let key in myObject) {
+  console.log(key, myObject[key]);
+}
+
+For...of loop (for arrays):
+
+let myArray = [1, 2, 3, 4, 5];
+
+for (let element of myArray) {
+  console.log(element);
+}
+
+For loop:
+
+let myArray = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < myArray.length; i++) {
+  console.log(myArray[i]);
+}
+
+
+forEach (for arrays):
+
+let myArray = [1, 2, 3, 4, 5];
+
+myArray.forEach(function (element) {
+  console.log(element);
+});
+
+3.read about the difference between window,screen and document in java script
+
+1.window Object:
+
+The window object is the top-level object in the browser's object model. It represents the browser window or tab.
+All global JavaScript variables and functions are defined on the window object. For example, if you declare a global variable like var x = 10;, it becomes a property of the window object (window.x).
+It provides methods for interacting with the browser window, such as opening or closing windows, setting timeouts, and navigating to URLs.
+Example:
+// Accessing a global variable
+console.log(window.x); // 10
+
+// Opening a new window
+window.open("https://www.example.com", "_blank");
+
+2.screen Object:
+
+The screen object represents the user's screen or display.
+It provides information about the screen's width, height, color depth, and other properties.
+Developers can use this information to create responsive designs or adjust the layout based on the user's screen characteristics.
+Example:
+// Getting screen width and height
+console.log(screen.width);  // Width of the screen
+console.log(screen.height); // Height of the screen
+
+3.document Object:
+
+The document object represents the HTML document loaded in the browser.
+It provides methods and properties for interacting with the content of the document, such as manipulating HTML elements, handling events, and modifying the document structure.
+DOM (Document Object Model) manipulation is done through the document object.
+Example:
+// Changing the content of an HTML element
+document.getElementById("myElement").innerHTML = "New Content";
+
+// Adding an event listener
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("Button Clicked!");
+});
+
+
+4.codekata practice
+
+CodeKata is a term coined by Dave Thomas, one of the authors of "The Pragmatic Programmer." CodeKata is a set of programming exercises that are designed to help programmers improve their skills through deliberate practice. These exercises cover a variety of topics and can be solved using different programming languages.
+
+Here's a simple example of a CodeKata exercise. Let's create a function that calculates the nth Fibonacci number.
+
+// CodeKata: Fibonacci Sequence
+// Calculate the nth Fibonacci number
+
+function fibonacci(n) {
+  if (n <= 1) {
+    return n;
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+}
+
+// Testing the function
+console.log(fibonacci(0)); // Output: 0
+console.log(fibonacci(1)); // Output: 1
+console.log(fibonacci(2)); // Output: 1
+console.log(fibonacci(3)); // Output: 2
+console.log(fibonacci(4)); // Output: 3
+console.log(fibonacci(5)); // Output: 5
+// ...
+
+// Note: The naive recursive approach is not the most efficient for large values of n,
+// and there are more optimized algorithms for calculating Fibonacci numbers.
+
+
